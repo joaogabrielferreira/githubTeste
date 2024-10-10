@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body style="background-color: aqua;">
+        <h1>Formulário da biblioteca</h1>
+    <form action="site.php" method="post">
+    <fieldset><legend><h3>Informações pessoais</h3></legend>    <!-- Início do formulário -->
+        <label for="pnome">Digite seu primeiro nome:</label><br>
+        <input type="text" name="pnome"><br>
+        <label for="snome">Digite seu sobrenome:</label><br>
+        <input type="text" name="snome"><br>
+        <label for="telefone">Digite seu número de telefone:</label><br>
+        <input type="text" name="telefone"><br>
+        <label for="email">Digite email:</label><br>
+        <input type="email" name="email"><br>
+        <label for="rgcpf">Digite seu RG ou CPF:</label><br>
+        <input type="text" name="rgcpf"><br>
+        <label for="end">Digite o endreço de entrega:</label><br>
+        <input type="text" name="end"><br>
+        <label for="numcasa">Digite o número da sua casa:</label><br>
+        <input type="text" name="numcasa"><br>
+    </fieldset>
+
+    <fieldset><legend><h3>Escolha seu livro</h3></legend>
+        <label for="faixapreço">Faixa de preço:</label><br>
+    <select name="select">
+        <option value="preço1" selected>R$10,00 até R$20,00</option>
+        <option value="preço2">R$25,00 até R$35,00</option>
+        <option value="preço3">R$40,00 até R$50,00</option>
+    </select><br><br>
+    <label for="livros">Opções de livro:</label><br>
+        <input list="livros" name="livros" id="livro">
+        <datalist id="livros">
+        <option value="Ficção Científica">
+        <option value="Fantasia">
+        <option value="Suspense/Thriller">
+        <option value="Não Ficção">
+        <option value="Clássicos">
+    </datalist><br><br>
+        <label>Gênero:</label><br>
+        <label for="genero">Masculino</label>
+        <input type="radio" id="genero" name="genero" value="Masculino"><br>
+        <label for="genero">Feminino</label>
+        <input type="radio" id="genero" name="genero" value="Feminino"><br>
+        <label for="genero">Outros</label>
+        <input type="radio" id="genero" name="genero" value="Outros"><br><br>
+        <label>Condições:</label><br>
+        <label for="condicao">Novo</label>
+        <input type="checkbox" id="condicao" name="condicao" value="Novo"><br>
+        <label for="condicao">Usado</label>
+        <input type="checkbox" id="condicao" name="condicao" value="Usado"><br><br>
+
+        <label for="coment">Deixe seu comentário</label><br>
+    <textarea name="coment" id="coment" cols="30" rows="10"></textarea>
+    </fieldset><br>
+        <input type="submit">
+</form> <!-- Fim do formulário --> 
+</body>
+</html>
